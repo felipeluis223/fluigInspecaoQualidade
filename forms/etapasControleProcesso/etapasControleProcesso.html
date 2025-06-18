@@ -1,0 +1,187 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="fluig-style-guide ">
+		<form name="form" role="form" class="fs-display-flex fs-flex-direction-column">
+
+			<div class="panel panel-primary">
+				<div class="panel-footer">
+					<h2>Controle de Inspeção de Qualidade</h2>
+				</div>
+			</div>
+			
+			<section class="fs-sm-padding-left fs-display-flex fs-flex-direction-column">
+				<!-- Informações do Lote - Solicitante -->
+				<span>Dados de identificação do solicitante e informações detalhadas sobre a solicitação:</span>
+				<section class="fs-md-margin-top fs-md-margin-bottom fs-display-flex fs-flex-direction-row fs-flex-wrap-wrap" name="batchData">
+					<div class="form-group col-md-2">
+						<label for="idColab">ID do colaborador:</label>
+						<input type="text" name="idColab" id="idColab" class="form-control" placeholder="Ex.: 0000000000" />
+					</div>
+
+					<div class="form-group col-md-4">
+						<label for="nameColab">Nome do colaborador:</label>
+						<input type="text" name="nameColab" id="nameColab" class="form-control" placeholder="Ex.: Luis Felipe" />
+					</div>
+
+					<div class="form-group col-md-3">
+						<label for="batchId">Identificação do lote:</label>
+						<input type="text" maxlength="10" name="batchId" id="batchId" class="form-control" placeholder="Ex.: 00000001111" />
+					</div>	
+					
+					<div class="form-group col-md-3">
+						<label for="batchDate">Data da solicitação:</label>
+						<input type="date" name="batchDate" id="batchDate" class="form-control"/>
+					</div>
+				</section>
+				
+				<!-- Informações do Corte - 1º Processo -->
+				<h3>Inspeção - Corte</h3>
+				<span class="form-group">Dados e especificações referentes ao procedimento de corte do material:</span>
+				<section class="fs-md-margin-top fs-md-margin-bottom fs-display-flex fs-flex-direction-row fs-flex-wrap-wrap" name="batchData">
+					<div class="form-group col-md-3">
+						<label>Checklist - Etapa de Corte:</label>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="afiamento" name="afiamento">
+							<label for="afiamento">Afiamento da lâmina verificado</label>
+						</div>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="epi" name="epi">
+							<label for="epi">Uso de EPI pelo operador</label>
+						</div>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="calibracao" name="calibracao">
+							<label for="calibracao">Equipamento calibrado antes do corte</label>
+						</div>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="trincas" name="trincas">
+							<label for="trincas">Sem ocorrência de trincas durante o corte</label>
+						</div>
+					</div>
+
+					<div class="form-group col-md-3">
+						<label for="nameResCorte">Nome do responsável:</label>
+						<input type="text" name="nameRespCorte" id="nameRespCorte" class="form-control" placeholder="Ex.: Luis Felipe" />
+					</div>
+
+					<div class="form-group col-md-3">
+						<label for="corteDate">Data da Inspeção:</label>
+						<input type="date" name="corteDate" id="corteDate" class="form-control"/>
+					</div>
+
+
+					<div class="form-group col-md-3">
+						<label>Status:</label>
+						<div class="fs-display-flex fs-flex-direction-row fs-md-gap">
+							<div class="custom-radio custom-radio-danger">
+								<input type="radio" name="radioTypesCorte" value="danger" id="radioCorteNegado">
+								<label for="radioCorteNegado">Negado</label>
+							</div>
+							<div class="custom-radio custom-radio-success">
+								<input type="radio" name="radioTypesCorte" value="success" id="radioCorteAprovado">
+								<label for="radioCorteAprovado">Aprovado</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group col-md-12">
+						<label for="obsCorte">Observação ou upload:</label>
+						<textarea name="obsCorte" id="obsCorte" class="form-control" rows="2"></textarea>
+					</div>
+				</section>
+				
+				<!-- Informações do Serraria - 2º Processo -->
+				<h3>Inspeção - Serraria</h3>
+				<span class="form-group">Dados e especificações referentes ao procedimento da serraria:</span>
+				<section class="fs-md-margin-top fs-md-margin-bottom fs-display-flex fs-flex-direction-row fs-flex-wrap-wrap" name="batchData">
+					<div class="form-group col-md-4">
+						<label>Checklist – Etapas do Processo na Serraria:</label>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="recebimentoToras" name="recebimentoToras">
+							<label for="recebimentoToras">Recebimento e conferência das toras</label>
+						</div>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="descascamento" name="descascamento">
+							<label for="descascamento">Descascamento realizado</label>
+						</div>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="cortePrimario" name="cortePrimario">
+							<label for="cortePrimario">Corte primário (desdobro) executado</label>
+						</div>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="corteSecundario" name="corteSecundario">
+							<label for="corteSecundario">Corte secundário/refile realizado</label>
+						</div>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="inspecaoVisual" name="inspecaoVisual">
+							<label for="inspecaoVisual">Inspeção visual e classificação das peças</label>
+						</div>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="secagem" name="secagem">
+							<label for="secagem">Secagem da madeira realizada (natural/artificial)</label>
+						</div>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="armazenagem" name="armazenagem">
+							<label for="armazenagem">Armazenagem adequada das peças</label>
+						</div>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="documentacao" name="documentacao">
+							<label for="documentacao">Documentação e expedição finalizadas</label>
+						</div>
+					</div>
+
+
+					<div class="form-group col-md-3">
+						<label for="nameRespSerraria">Nome do responsável:</label>
+						<input type="text" name="nameRespSerraria" id="nameRespSerraria" class="form-control" placeholder="Ex.: Maria Helena" />
+					</div>
+
+					<div class="form-group col-md-3">
+						<label for="serrariaDate">Data da Inspeção:</label>
+						<input type="date" name="serrariaDate" id="serrariaDate" class="form-control"/>
+					</div>
+
+
+					<div class="form-group col-md-2">
+						<label>Status:</label>
+						<div class="fs-display-flex fs-flex-direction-row fs-md-gap">
+							<div class="custom-radio custom-radio-danger">
+								<input type="radio" name="radioTypesSerraria" value="danger" id="radioSerrariaNegado">
+								<label for="radioSerrariaNegado">Negado</label>
+							</div>
+							<div class="custom-radio custom-radio-success">
+								<input type="radio" name="radioTypesSerraria" value="success" id="radioSerrariaAprovado">
+								<label for="radioSerrariaAprovado">Aprovado</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group col-md-12">
+						<label for="obsSerraria">Observação ou upload:</label>
+						<textarea name="obsSerraria" id="obsSerraria" class="form-control" rows="2"></textarea>
+					</div>
+				</section>
+				
+			</section>
+		</form>
+	</div>
+</body>
+</html>
