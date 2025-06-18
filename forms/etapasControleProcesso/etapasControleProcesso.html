@@ -84,8 +84,8 @@
 						<label>Status:</label>
 						<div class="fs-display-flex fs-flex-direction-row fs-md-gap">
 							<div class="custom-radio custom-radio-danger">
-								<input type="radio" name="radioTypesCorte" value="danger" id="radioCorteNegado">
-								<label for="radioCorteNegado">Negado</label>
+								<input type="radio" name="radioTypesCorte" value="danger" id="radioCorteReprovado">
+								<label for="radioCorteReprovado">Reprovado</label>
 							</div>
 							<div class="custom-radio custom-radio-success">
 								<input type="radio" name="radioTypesCorte" value="success" id="radioCorteAprovado">
@@ -164,8 +164,8 @@
 						<label>Status:</label>
 						<div class="fs-display-flex fs-flex-direction-row fs-md-gap">
 							<div class="custom-radio custom-radio-danger">
-								<input type="radio" name="radioTypesSerraria" value="danger" id="radioSerrariaNegado">
-								<label for="radioSerrariaNegado">Negado</label>
+								<input type="radio" name="radioTypesSerraria" value="danger" id="radioSerrariaReprovado">
+								<label for="radioSerrariaReprovado">Reprovado</label>
 							</div>
 							<div class="custom-radio custom-radio-success">
 								<input type="radio" name="radioTypesSerraria" value="success" id="radioSerrariaAprovado">
@@ -179,6 +179,76 @@
 						<textarea name="obsSerraria" id="obsSerraria" class="form-control" rows="2"></textarea>
 					</div>
 				</section>
+
+				<!-- Informações do Secagem - 3º Processo -->
+				<!-- Informações da Secagem - 3º Processo -->
+				<h3>Inspeção - Secagem</h3>
+				<span class="form-group">Dados e especificações referentes ao procedimento de secagem da madeira:</span>
+				<section class="fs-md-margin-top fs-md-margin-bottom fs-display-flex fs-flex-direction-row fs-flex-wrap-wrap" name="secagemData">
+					<div class="form-group col-md-4">
+						<label>Checklist – Etapas do Processo de Secagem:</label>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="empilhamento" name="empilhamento">
+							<label for="empilhamento">Empilhamento correto da madeira nos racks</label>
+						</div>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="entradaForno" name="entradaForno">
+							<label for="entradaForno">Registro da entrada no forno</label>
+						</div>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="curvaSecagem" name="curvaSecagem">
+							<label for="curvaSecagem">Curva de secagem conforme o tipo de madeira</label>
+						</div>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="verifUmidade" name="verifUmidade">
+							<label for="verifUmidade">Verificação da umidade ao final do processo</label>
+						</div>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="ausenciaRachaduras" name="ausenciaRachaduras">
+							<label for="ausenciaRachaduras">Ausência de rachaduras ou deformações</label>
+						</div>
+
+						<div class="custom-checkbox custom-checkbox-success">
+							<input type="checkbox" id="resfriamento" name="resfriamento">
+							<label for="resfriamento">Fase de resfriamento realizada</label>
+						</div>
+					</div>
+
+					<div class="form-group col-md-3">
+						<label for="nameRespSecagem">Nome do responsável:</label>
+						<input type="text" name="nameRespSecagem" id="nameRespSecagem" class="form-control" placeholder="Ex.: Carlos Silva" />
+					</div>
+
+					<div class="form-group col-md-3">
+						<label for="secagemDate">Data da Inspeção:</label>
+						<input type="date" name="secagemDate" id="secagemDate" class="form-control"/>
+					</div>
+
+					<div class="form-group col-md-2">
+						<label>Status:</label>
+						<div class="fs-display-flex fs-flex-direction-row fs-md-gap">
+							<div class="custom-radio custom-radio-danger">
+								<input type="radio" name="radioTypesSecagem" value="danger" id="radioSecagemReprovado">
+								<label for="radioSecagemReprovado">Reprovado</label>
+							</div>
+							<div class="custom-radio custom-radio-success">
+								<input type="radio" name="radioTypesSecagem" value="success" id="radioSecagemAprovado">
+								<label for="radioSecagemAprovado">Aprovado</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group col-md-12">
+						<label for="obsSecagem">Observações e/ou upload:</label>
+						<textarea name="obsSecagem" id="obsSecagem" class="form-control" rows="2"></textarea>
+					</div>
+				</section>
+
 				
 			</section>
 		</form>
