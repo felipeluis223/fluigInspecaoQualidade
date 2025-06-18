@@ -181,7 +181,6 @@
 				</section>
 
 				<!-- Informações do Secagem - 3º Processo -->
-				<!-- Informações da Secagem - 3º Processo -->
 				<h3>Inspeção - Secagem</h3>
 				<span class="form-group">Dados e especificações referentes ao procedimento de secagem da madeira:</span>
 				<section class="fs-md-margin-top fs-md-margin-bottom fs-display-flex fs-flex-direction-row fs-flex-wrap-wrap" name="secagemData">
@@ -249,7 +248,41 @@
 					</div>
 				</section>
 
-				
+				<!-- Validação do processo - Supervisor  -->
+				<h3>Validar Processo</h3>
+				<span class="form-group">Verifique se os processos anteriores foram executados corretamente antes de continuar:</span>
+				<section class="fs-md-margin-top fs-md-margin-bottom fs-display-flex fs-flex-direction-row fs-flex-wrap-wrap" name="batchData">
+					<div class="form-group col-md-2">
+						<label for="idSupervisor">ID do supervisor:</label>
+						<input type="text" name="idSupervisor" id="idSupervisor" class="form-control" placeholder="Ex.: 0000000000" />
+					</div>
+					
+					<div class="form-group col-md-4">
+						<label for="nameSupervisor">Nome do supervisor:</label>
+						<input type="text" name="nameSupervisor" id="nameSupervisor" class="form-control" placeholder="Ex.: Bianca Cruz" />
+					</div>
+
+					<div class="form-group col-md-2">
+						<label>Status:</label>
+						<div class="fs-display-flex fs-flex-direction-row fs-md-gap">
+							<div class="custom-radio custom-radio-danger">
+								<input type="radio" name="radioTypesSupervisor" value="danger" id="radioSupervisorReprovado">
+								<label for="radioSupervisorReprovado">Reprovado</label>
+							</div>
+							<div class="custom-radio custom-radio-success">
+								<input type="radio" name="radioTypesSupervisor" value="success" id="radioSupervisormAprovado">
+								<label for="radioSupervisorAprovado">Aprovado</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group col-md-12">
+						<label for="obsSupervisor">Observações e/ou upload:</label>
+						<textarea name="obsSupervisor" id="obsSupervisor" class="form-control" rows="2"></textarea>
+					</div>
+
+				</section>
+
 			</section>
 		</form>
 	</div>
