@@ -28,10 +28,10 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>controleProcesso</processId>
-      <version>2</version>
+      <version>7</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
-    <formId>0</formId>
+    <formId>13</formId>
     <editionMode>true</editionMode>
     <updateAttachmentsVersion>false</updateAttachmentsVersion>
     <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
@@ -59,8 +59,8 @@
       <deadlineTime>0</deadlineTime>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
-      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <engineAllocationId>Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;grpColaborador&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>true</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -110,6 +110,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;grpCorte&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -160,6 +162,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;grpSerraria&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -210,6 +214,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;grpSecagem&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -260,6 +266,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;grpSupervisor&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -310,6 +318,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;1&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -360,6 +370,8 @@
       <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;1&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -525,7 +537,7 @@
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
         <expressionOrder>1</expressionOrder>
-        <version>2</version>
+        <version>7</version>
         <sequence>36</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;radioTypesCorte&quot;) == &quot;success&quot;</condition>
@@ -539,7 +551,7 @@
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
         <expressionOrder>2</expressionOrder>
-        <version>2</version>
+        <version>7</version>
         <sequence>36</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;radioTypesCorte&quot;) == &quot;danger&quot;</condition>
@@ -553,7 +565,7 @@
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
         <expressionOrder>1</expressionOrder>
-        <version>2</version>
+        <version>7</version>
         <sequence>42</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;radioTypesSerraria&quot;) == &quot;success&quot;</condition>
@@ -567,7 +579,7 @@
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
         <expressionOrder>2</expressionOrder>
-        <version>2</version>
+        <version>7</version>
         <sequence>42</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;radioTypesSerraria&quot;) == &quot;danger&quot;</condition>
@@ -581,7 +593,7 @@
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
         <expressionOrder>1</expressionOrder>
-        <version>2</version>
+        <version>7</version>
         <sequence>48</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;radioTypesSecagem&quot;) == &quot;success&quot;</condition>
@@ -595,7 +607,7 @@
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
         <expressionOrder>2</expressionOrder>
-        <version>2</version>
+        <version>7</version>
         <sequence>48</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;radioTypesSecagem&quot;) == &quot;danger&quot;</condition>
@@ -901,7 +913,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
-        <version>2</version>
+        <version>7</version>
         <linkSequence>34</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -912,7 +924,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
-        <version>2</version>
+        <version>7</version>
         <linkSequence>35</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -923,7 +935,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
-        <version>2</version>
+        <version>7</version>
         <linkSequence>50</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -934,7 +946,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
-        <version>2</version>
+        <version>7</version>
         <linkSequence>55</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -945,7 +957,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
-        <version>2</version>
+        <version>7</version>
         <linkSequence>55</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -956,7 +968,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
-        <version>2</version>
+        <version>7</version>
         <linkSequence>57</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
