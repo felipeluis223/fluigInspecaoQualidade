@@ -3,12 +3,13 @@ function displayFields(form, customHTML) {
     var atividade = getValue("WKNumState");
 
     // Grupos do processo
-    var groups = {
-        corte: "grpCorte",
-        serraria: "grpSerraria",
-        secagem: "grpSecagem",
-        supervisor: "grpSupervisor"
-    };
+    var groups = [
+        "grpColaborador",
+        "grpCorte",
+        "grpSerraria",
+        "grpSecagem",
+        "grpSupervisor"
+    ];
 
     // Dataset de grupos do usuário
     var constraints = [
@@ -16,10 +17,16 @@ function displayFields(form, customHTML) {
     ];
     var groupDataset = DatasetFactory.getDataset("colleagueGroup", null, constraints, null);
 
-    var userGroup = [];
+    // var userGroup = [];
+    var userGroup = {}
     for (var i = 0; i < groupDataset.rowsCount; i++) {
         var groupId = groupDataset.getValue(i, "colleagueGroupPK.groupId");
-        userGroup.push(groupId);
+        
+        for(var index = 0; index <= groups.length; index++){
+            if (groupId == groups[index]){
+                userGroup[groups[index]] = groupId
+            }
+        }
     }
 
     // Preenche campos iniciais
@@ -37,6 +44,13 @@ function displayFields(form, customHTML) {
 
     log.info("======================================================");
     log.info("Grupos - USUÁRIO: " + user + " -------> " + userGroup);
+    log.info("======================================================");
+    
+    for (var key in userGroup) {
+        if (userGroup.hasOwnProperty(key)) {
+            log.info("Grupo identificado: " + key + " => " + userGroup[key]);
+        }
+    }
     log.info("======================================================");
 
 
@@ -92,6 +106,7 @@ function displayFields(form, customHTML) {
 
     // Colaborador Solicitante:
     form.setEnabled("visto", false);
+
 
 
 
