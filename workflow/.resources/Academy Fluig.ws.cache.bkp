@@ -25,6 +25,16 @@
     <void method="add">
      <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
       <void property="groupDescription">
+       <string>gepSecagem</string>
+      </void>
+      <void property="groupId">
+       <string>gepSecagem</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
        <string>Gestores</string>
       </void>
       <void property="groupId">
@@ -39,16 +49,6 @@
       </void>
       <void property="groupId">
        <string>grpCorte</string>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
-      <void property="groupDescription">
-       <string>grpSecagem</string>
-      </void>
-      <void property="groupId">
-       <string>grpSecagem</string>
       </void>
      </object>
     </void>
@@ -86,11 +86,87 @@
   </void>
   <void method="put">
    <string>expediente</string>
-   <array class="java.lang.String" length="1">
+   <array class="java.lang.String" length="3">
     <void index="0">
      <string>Default</string>
     </void>
+    <void index="1">
+     <string>expediente_admin</string>
+    </void>
+    <void index="2">
+     <string>expediente_producao</string>
+    </void>
    </array>
+  </void>
+  <void method="put">
+   <string>processosServidor</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>controleProcesso</string>
+      </void>
+      <void property="processId">
+       <string>controleProcesso</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Listar Tarefas</string>
+      </void>
+      <void property="processId">
+       <string>FLUIGADHOC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Modelo Treinamento</string>
+      </void>
+      <void property="processId">
+       <string>PP-001</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>solicitacaoCompra</string>
+      </void>
+      <void property="processId">
+       <string>solicitacaoCompra</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Teste4444</string>
+      </void>
+      <void property="processId">
+       <string>Teste4444</string>
+      </void>
+     </object>
+    </void>
+   </object>
   </void>
   <void method="put">
    <string>mecanismo</string>

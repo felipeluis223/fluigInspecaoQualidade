@@ -519,7 +519,92 @@
       <digitalSignature>false</digitalSignature>
     </ProcessState>
   </list>
-  <list/>
+  <list>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>controleProcesso</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>1</version>
+        <sequence>36</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;radioTypesCorte&quot;) == &quot;success&quot;</condition>
+      <destinationSequenceId>6</destinationSequenceId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;grpSerraria&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>controleProcesso</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>1</version>
+        <sequence>36</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;radioTypesCorte&quot;) == &quot;danger&quot;</condition>
+      <destinationSequenceId>51</destinationSequenceId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;1&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>controleProcesso</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>1</version>
+        <sequence>42</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;radioTypesSerraria&quot;) == &quot;success&quot;</condition>
+      <destinationSequenceId>8</destinationSequenceId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;grpSecagem&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>controleProcesso</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>1</version>
+        <sequence>42</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;radioTypesSerraria&quot;) == &quot;danger&quot;</condition>
+      <destinationSequenceId>51</destinationSequenceId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;1&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>controleProcesso</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>1</version>
+        <sequence>48</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;radioTypesSecagem&quot;) == &quot;success&quot;</condition>
+      <destinationSequenceId>10</destinationSequenceId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;grpSupervisor&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>controleProcesso</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>1</version>
+        <sequence>48</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;radioTypesSecagem&quot;) == &quot;danger&quot;</condition>
+      <destinationSequenceId>51</destinationSequenceId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;1&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+  </list>
   <list>
     <ProcessLink>
       <processLinkPK>
