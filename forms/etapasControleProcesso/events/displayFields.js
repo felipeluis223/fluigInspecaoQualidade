@@ -55,7 +55,7 @@ function displayFields(form, customHTML) {
         form.setEnabled(allFields[i], false);
     }
 
-    // Agora sim: habilita conforme o grupo
+    // Habilitando os campos necessários para a primeira etapa do solicitante:
     if ("grpColaborador" in userGroup) {
         user = getValue("WKUser");
         
@@ -67,10 +67,13 @@ function displayFields(form, customHTML) {
         form.setEnabled("idColab", true);
         form.setEnabled("batchId", true);
         
-        // Validando a resposta do supervisor para liberar o campo de visto:
-        if((form.getValue("radioTypesSupervisor") == "success") || form.getValue("radioTypesSupervisor") == "danger"){
+        // Validando o primeiro radioButton para liberar o check após as condições:
+        if((form.getValue("radioTypesCorte") == "success") || form.getValue("radioTypesCorte") == "danger"){
+            form.setEnabled("idColab", false);
+            form.setEnabled("batchId", false);
             form.setEnabled("visto", false);
         }
+        
         form.setEnabled("visto", true);
     }
 
