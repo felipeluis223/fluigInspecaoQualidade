@@ -33,17 +33,7 @@ function displayFields(form, customHTML) {
         return formatDate;
     }
 
-
-    log.info("======================================================");
-    log.info("Grupos - USUÁRIO: " + user);
-    for (var key in userGroup) {
-        if (userGroup.hasOwnProperty(key)) {
-            log.info("Grupo identificado: " + key + " => " + userGroup[key]);
-        }
-    }
-    log.info("======================================================");
-
-    // Desabilita todos os campos por padrão
+    // Desabilita todos os campos por padrão:
     var allFields = [
         "idColab", "nameColab", "batchId", "batchDate",
         "afiamento", "epi", "calibracao", "trincas", "nameRespCorte", "corteDate", "radioTypesCorte", "obsCorte",
@@ -51,7 +41,7 @@ function displayFields(form, customHTML) {
         "armazenagem", "documentacao", "nameRespSerraria", "serrariaDate", "radioTypesSerraria", "obsSerraria",
         "empilhamento", "entradaForno", "curvaSecagem", "verifUmidade", "ausenciaRachaduras", "resfriamento",
         "nameRespSecagem", "secagemDate", "radioTypesSecagem", "obsSecagem",
-        "idSupervisor", "nameSupervisor", "radioTypesSupervisor", "obsSupervisor",
+        "idSupervisor", "nameSupervisor", "supervisorDate", "radioTypesSupervisor", "obsSupervisor",
         "visto"
     ];
     for (var i = 0; i < allFields.length; i++) {
@@ -137,6 +127,9 @@ function displayFields(form, customHTML) {
     if ("grpSupervisor" in userGroup) {
         user = getValue("WKUser");
         form.setValue("nameSupervisor", user);
+        form.setValue("supervisorDate", getDate());
+
+        form.setEnabled("supervisorDate", false);
         form.setEnabled("nameSupervisor", false);
 
         form.setEnabled("idSupervisor", true);
