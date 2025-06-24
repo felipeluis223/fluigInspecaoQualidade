@@ -24,11 +24,14 @@ function displayFields(form, customHTML) {
         }
     }
 
-    var now = new Date();
-    var day = now.getDate() < 10 ? "0" + now.getDate() : now.getDate();
-    var month = now.getMonth() + 1 < 10 ? "0" + (now.getMonth() + 1) : now.getMonth() + 1;
-    var year = now.getFullYear();
-    var formatDate = day + '/' + month + '/' + year;
+    function getDate(){
+        var now = new Date();
+        var day = now.getDate() < 10 ? "0" + now.getDate() : now.getDate();
+        var month = now.getMonth() + 1 < 10 ? "0" + (now.getMonth() + 1) : now.getMonth() + 1;
+        var year = now.getFullYear();
+        var formatDate = day + '/' + month + '/' + year;
+        return formatDate;
+    }
 
 
     log.info("======================================================");
@@ -60,7 +63,7 @@ function displayFields(form, customHTML) {
         user = getValue("WKUser");
         
         form.setValue("nameColab", user);
-        form.setValue("batchDate", formatDate);
+        form.setValue("batchDate", getDate());
 
         form.setEnabled("nameColab", false);
         form.setEnabled("batchDate", false);
@@ -71,26 +74,36 @@ function displayFields(form, customHTML) {
         if((form.getValue("radioTypesCorte") == "success") || form.getValue("radioTypesCorte") == "danger"){
             form.setEnabled("idColab", false);
             form.setEnabled("batchId", false);
-            form.setEnabled("visto", false);
+            form.setEnabled("visto", true);
         }
-        
-        form.setEnabled("visto", true);
+
+        form.setEnabled("visto", false);
     }
 
     if ("grpCorte" in userGroup) {
         user = getValue("WKUser");
+        form.setValue("nameRespCorte", user);
+        form.setValue("corteDate", getDate());
+
+        form.setEnabled("corteDate", false);
+        form.setEnabled("nameRespCorte", false);
+
         form.setEnabled("afiamento", true);
         form.setEnabled("epi", true);
         form.setEnabled("calibracao", true);
         form.setEnabled("trincas", true);
-        form.setEnabled("nameRespCorte", true);
-        form.setEnabled("corteDate", true);
         form.setEnabled("radioTypesCorte", true);
         form.setEnabled("obsCorte", true);
     }
 
     if ("grpSerraria" in userGroup) {
         user = getValue("WKUser");
+        form.setValue("nameRespSerraria", user);
+        form.setValue("serrariaDate", getDate());
+        
+        form.setEnabled("serrariaDate", false);
+        form.setEnabled("nameRespSerraria", false);
+
         form.setEnabled("recebimentoToras", true);
         form.setEnabled("descascamento", true);
         form.setEnabled("cortePrimario", true);
@@ -99,30 +112,34 @@ function displayFields(form, customHTML) {
         form.setEnabled("secagem", true);
         form.setEnabled("armazenagem", true);
         form.setEnabled("documentacao", true);
-        form.setEnabled("nameRespSerraria", true);
-        form.setEnabled("serrariaDate", true);
         form.setEnabled("radioTypesSerraria", true);
         form.setEnabled("obsSerraria", true);
     }
 
     if ("grpSecagem" in userGroup) {
         user = getValue("WKUser");
+        form.setValue("nameRespSecagem", user);
+        form.setValue("secagemDate", getDate());
+
+        form.setEnabled("secagemDate", false);
+        form.setEnabled("nameRespSecagem", false);
+        
         form.setEnabled("empilhamento", true);
         form.setEnabled("entradaForno", true);
         form.setEnabled("curvaSecagem", true);
         form.setEnabled("verifUmidade", true);
         form.setEnabled("ausenciaRachaduras", true);
         form.setEnabled("resfriamento", true);
-        form.setEnabled("nameRespSecagem", true);
-        form.setEnabled("secagemDate", true);
         form.setEnabled("radioTypesSecagem", true);
         form.setEnabled("obsSecagem", true);
     }
 
     if ("grpSupervisor" in userGroup) {
         user = getValue("WKUser");
+        form.setValue("nameSupervisor", user);
+        form.setEnabled("nameSupervisor", false);
+
         form.setEnabled("idSupervisor", true);
-        form.setEnabled("nameSupervisor", true);
         form.setEnabled("radioTypesSupervisor", true);
         form.setEnabled("obsSupervisor", true);
     }
