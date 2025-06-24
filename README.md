@@ -49,6 +49,7 @@ Cada etapa possui campos específicos e controle de visibilidade/habilitação b
 ---
 
 ## 📂 Estrutura do Projeto
+```bash
 ├── form/
 │ └── form.html
 ├── scripts/
@@ -58,3 +59,4 @@ Cada etapa possui campos específicos e controle de visibilidade/habilitação b
 ├── css/
 │ └── style.css
 ├── README.md
+```
