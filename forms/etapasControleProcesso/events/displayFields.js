@@ -131,6 +131,7 @@ function displayFields(form, customHTML) {
 
         form.setEnabled("supervisorDate", false);
         form.setEnabled("nameSupervisor", false);
+        
 
         form.setEnabled("idSupervisor", true);
         form.setEnabled("radioTypesSupervisor", true);
