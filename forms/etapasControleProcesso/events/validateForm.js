@@ -42,7 +42,7 @@ function validateForm(form) {
             (activityCorte.epi != "on") || 
             (activityCorte.calibracao != "on") || 
             (activityCorte.trincas != "on")) {
-            throw "Todos os itens do checklist da etapa de corte devem ser marcados.";
+            throw "Todos os itens do checklist da etapa de Corte devem ser marcados.";
         }
         if(activityCorte.nameResp == ""){
             throw 'Por favor, preencha o campo "Nome do Responsável" antes de continuar.';
@@ -56,7 +56,41 @@ function validateForm(form) {
     }
 
     // Processo Serraria:
-    // if(activity == 4){}
+    if(activity == 6){
+        var activitySerraria = {
+            recebimentoToras: form.getValue("recebimentoToras"),
+            descascamento: form.getValue("descascamento"),
+            cortePrimario: form.getValue("cortePrimario"),
+            corteSecundario: form.getValue("corteSecundario"),
+            inspecaoVisual: form.getValue("inspecaoVisual"),
+            secagem: form.getValue("secagem"),
+            armazenagem: form.getValue("armazenagem"),
+            documentacao: form.getValue("documentacao"),
+            nameResp: form.getValue("nameRespSerraria"),
+            dateInspecao: form.getValue("serrariaDate"),
+            status: form.getValue("radioTypesSerraria")
+        }
+
+        if((activitySerraria.recebimentoToras != "on") ||
+            (activitySerraria.descascamento != "on") ||
+            (activitySerraria.cortePrimario != "on") ||
+            (activitySerraria.corteSecundario != "on") ||
+            (activitySerraria.inspecaoVisual != "on") ||
+            (activitySerraria.secagem != "on") ||
+            (activitySerraria.armazenagem != "on") ||
+            (activitySerraria.documentacao != "on")){
+                throw "Todos os itens do checklist da etapa de Serraria devem ser marcados.";
+        }
+        if(activitySerraria.nameResp == ""){
+            throw 'Por favor, preencha o campo "Nome do Responsável" antes de continuar.';
+        }
+        if(activitySerraria.dateInspecao == ""){
+            throw 'Por favor, preencha a "Data da Serraria" antes de continuar.';
+        }
+        if(activitySerraria.status == ""){
+            throw 'Por favor, preencha o "Status" antes de continuar.';
+        }
+    }
 
     // Processo de Secagem:
     // if(activity == 4){}
