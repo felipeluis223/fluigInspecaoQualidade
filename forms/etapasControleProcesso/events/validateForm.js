@@ -135,6 +135,12 @@ function validateForm(form) {
     }
 
     // Processo de Retorno ao Solicitante:
-    // if(activity == 51){} // Retorno Negativo - Justificativa
-    // if(activity == 16){} // Retorno Positivo - Resultado
+    // Saída 51 - Retorno Negativo - Justificativa
+    // Saída 16 - Retorno Positivo - Resultado
+    if((activity == 16) || (activity ==51)){
+        var activityResult = form.getValue("visto");
+        if(activityResult != "on"){
+            throw 'Marque como "Visto" para concluir o processo.'
+        }
+    }
 }
