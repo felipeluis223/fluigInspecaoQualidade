@@ -33,7 +33,7 @@ function validateForm(form) {
             nameResp: form.getValue("nameResCorte"),
             dateCorte: form.getValue("corteDate"),
             status: form.getValue("radioTypesCorte")
-        }
+        };
         // Validando checkbox:
         if ((activityCorte.afiamento != "on") || 
             (activityCorte.epi != "on") || 
@@ -66,7 +66,7 @@ function validateForm(form) {
             nameResp: form.getValue("nameRespSerraria"),
             dateInspecao: form.getValue("serrariaDate"),
             status: form.getValue("radioTypesSerraria")
-        }
+        };
         if((activitySerraria.recebimentoToras != "on") ||
             (activitySerraria.descascamento != "on") ||
             (activitySerraria.cortePrimario != "on") ||
@@ -118,11 +118,21 @@ function validateForm(form) {
         if(activitySecagem.status == ""){
             throw 'Por favor, preencha o "Status" antes de continuar.';
         }
-
     }
 
     // Processo de Aprovação:
-    // if(activity == 4){}
+    if(activity == 10){
+        var activitySupervisor = {
+            id: form.getValue("idSupervisor"),
+            nameResp: form.getValue("nameSupervisor"),
+            dateInspecao: form.getValue("supervisorDate"),
+            status: form.getValue("radioTypesSupervisor")
+        };
+        if(activitySupervisor.id == ""){}
+        if(activitySupervisor.nameResp == ""){}
+        if(activitySupervisor.dateInspecao == ""){}
+        if(activitySupervisor.status == ""){}
+    }
 
     // Processo de Retorno ao Solicitante:
     // if(activity == 51){} // Retorno Negativo - Justificativa
