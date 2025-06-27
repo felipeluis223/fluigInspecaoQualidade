@@ -66,8 +66,6 @@ function displayFields(form, customHTML) {
             form.setEnabled("batchId", false);
             form.setEnabled("visto", true);
         }
-
-        form.setEnabled("visto", false);
     }
 
     if ("grpCorte" in userGroup) {
