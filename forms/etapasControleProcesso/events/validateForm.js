@@ -1,22 +1,70 @@
 function validateForm(form) {
     var activity = parseInt(getValue("WKNumState"));
 
-    // Validação por Processo:
-    
+
     // Solicitante do Processo:
     if(activity == 1){
-        if(form.getValue("idColab") == ""){
-            throw "Por favor preencha o campo ID do colaborador!"
+        var activitySolicitar = {
+            idColab: form.getValue("idColab"),
+            nameColab: form.getValue("nameColab"),
+            idLote: form.getValue("batchId"),
+            dateLote: form.getValue("batchDate")
+        };
+
+        if(activitySolicitar.idColab == ""){
+            throw 'Por favor, preencha o campo "ID do Colaborador" antes de prosseguir.';
         }
-        if(form.getValue("nameColab") == ""){
-            throw "Por favor preencha o campo nome do colaborador!"
+        if(activitySolicitar.nameColab == ""){
+            throw 'Por favor, preencha o campo "Nome do Colaborador" antes de continuar.';
         }
-        if(form.getValue("batchId") == ""){
-            throw "Por favor preencha o campo ID do lote!"
+        if(activitySolicitar.idLote == ""){
+            throw 'Por favor, preencha o campo "ID do Lote" antes de continuar.';
         }
-        if(form.getValue("batchDate") == ""){
-            throw "Por favor preencha a data da solicitação do lote!"
+        if(activitySolicitar.dateLote == ""){
+            throw 'Por favor, preencha a "Data da Solicitação" do Lote antes de continuar.';
         }
     }
 
+    // Processo de Corte:
+    if(activity == 4){
+        var activityCorte = {
+            afiamento: form.getValue("afiamento"),
+            epi: form.getValue("epi"),
+            calibracao: form.getValue("calibracao"),
+            trincas: form.getValue("trincas"),
+            nameResp: form.getValue("nameResCorte"),
+            dateCorte: form.getValue("corteDate"),
+            status: form.getValue("radioTypesCorte")
+        }
+        
+        // Validando checkbox:
+        if ((activityCorte.afiamento != "on") || 
+            (activityCorte.epi != "on") || 
+            (activityCorte.calibracao != "on") || 
+            (activityCorte.trincas != "on")) {
+            throw "Todos os itens do checklist da etapa de corte devem ser marcados.";
+        }
+        if(activityCorte.nameResp == ""){
+            throw 'Por favor, preencha o campo "Nome do Responsável" antes de continuar.';
+        }
+        if(activityCorte.dateCorte == ""){
+            throw 'Por favor, preencha a "Data do Corte" antes de continuar.';
+        }
+        if(activityCorte.status == ""){
+            throw 'Por favor, preencha o "Status" antes de continuar.';
+        }
+    }
+
+    // Processo Serraria:
+    // if(activity == 4){}
+
+    // Processo de Secagem:
+    // if(activity == 4){}
+
+    // Processo de Aprovação:
+    // if(activity == 4){}
+
+    // Processo de Retorno ao Solicitante:
+    // if(activity == 51){} // Retorno Negativo - Justificativa
+    // if(activity == 16){} // Retorno Positivo - Resultado
 }
