@@ -13,13 +13,13 @@ function validateForm(form) {
             throw 'Por favor, preencha o campo "ID do Colaborador" antes de prosseguir.';
         }
         if(activitySolicitar.nameColab == ""){
-            throw 'Por favor, preencha o campo "Nome do Colaborador" antes de continuar.';
+            throw 'Por favor, preencha o campo "Nome do Colaborador" antes de prosseguir.';
         }
         if(activitySolicitar.idLote == ""){
-            throw 'Por favor, preencha o campo "ID do Lote" antes de continuar.';
+            throw 'Por favor, preencha o campo "ID do Lote" antes de prosseguir.';
         }
         if(activitySolicitar.dateLote == ""){
-            throw 'Por favor, preencha a "Data da Solicitação" do Lote antes de continuar.';
+            throw 'Por favor, preencha a "Data da Solicitação" do Lote antes de prosseguir.';
         }
     }
 
@@ -42,13 +42,13 @@ function validateForm(form) {
             throw "Todos os itens do checklist da etapa de Corte devem ser marcados.";
         }
         if(activityCorte.nameResp == ""){
-            throw 'Por favor, preencha o campo "Nome do Responsável" antes de continuar.';
+            throw 'Por favor, preencha o campo "Nome do Responsável" antes de prosseguir.';
         }
         if(activityCorte.dateCorte == ""){
-            throw 'Por favor, preencha a "Data do Corte" antes de continuar.';
+            throw 'Por favor, preencha a "Data do Corte" antes de prosseguir.';
         }
         if(activityCorte.status == ""){
-            throw 'Por favor, preencha o "Status" antes de continuar.';
+            throw 'Por favor, preencha o "Status" antes de prosseguir.';
         }
     }
 
@@ -78,13 +78,13 @@ function validateForm(form) {
                 throw "Todos os itens do checklist da etapa de Serraria devem ser marcados.";
         }
         if(activitySerraria.nameResp == ""){
-            throw 'Por favor, preencha o campo "Nome do Responsável" antes de continuar.';
+            throw 'Por favor, preencha o campo "Nome do Responsável" antes de prosseguir.';
         }
         if(activitySerraria.dateInspecao == ""){
-            throw 'Por favor, preencha a "Data da Serraria" antes de continuar.';
+            throw 'Por favor, preencha a "Data da Serraria" antes de prosseguir.';
         }
         if(activitySerraria.status == ""){
-            throw 'Por favor, preencha o "Status" antes de continuar.';
+            throw 'Por favor, preencha o "Status" antes de prosseguir.';
         }
     }
 
@@ -110,13 +110,13 @@ function validateForm(form) {
                 throw "Todos os itens do checklist da etapa de Secagem devem ser marcados.";
         }
         if(activitySecagem.nameResp == ""){
-            throw 'Por favor, preencha o campo "Nome do Responsável" antes de continuar.';
+            throw 'Por favor, preencha o campo "Nome do Responsável" antes de prosseguir.';
         }
         if(activitySecagem.dateInspecao == ""){
-            throw 'Por favor, preencha a "Data da Secagem" antes de continuar.';
+            throw 'Por favor, preencha a "Data da Secagem" antes de prosseguir.';
         }
         if(activitySecagem.status == ""){
-            throw 'Por favor, preencha o "Status" antes de continuar.';
+            throw 'Por favor, preencha o "Status" antes de prosseguir.';
         }
     }
 
@@ -128,10 +128,18 @@ function validateForm(form) {
             dateInspecao: form.getValue("supervisorDate"),
             status: form.getValue("radioTypesSupervisor")
         };
-        if(activitySupervisor.id == ""){}
-        if(activitySupervisor.nameResp == ""){}
-        if(activitySupervisor.dateInspecao == ""){}
-        if(activitySupervisor.status == ""){}
+        if(activitySupervisor.id == ""){
+            throw 'Por favor, preencha o campo "ID do Supervisor" antes de prosseguir.';
+        }
+        if(activitySupervisor.nameResp == ""){
+            throw 'Por favor, preencha o campo "Nome do Responsável" antes de prosseguir.';
+        }
+        if(activitySupervisor.dateInspecao == ""){
+            throw 'Por favor, preencha a "Data" antes de prosseguir.';
+        }
+        if(activitySupervisor.status == ""){
+            throw 'Por favor, preencha o "Status" antes de prosseguir.';
+        }
     }
 
     // Processo de Retorno ao Solicitante:
