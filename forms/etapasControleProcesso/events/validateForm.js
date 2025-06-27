@@ -1,7 +1,6 @@
 function validateForm(form) {
     var activity = parseInt(getValue("WKNumState"));
 
-
     // Solicitante do Processo:
     if(activity == 1){
         var activitySolicitar = {
@@ -10,7 +9,6 @@ function validateForm(form) {
             idLote: form.getValue("batchId"),
             dateLote: form.getValue("batchDate")
         };
-
         if(activitySolicitar.idColab == ""){
             throw 'Por favor, preencha o campo "ID do Colaborador" antes de prosseguir.';
         }
@@ -36,7 +34,6 @@ function validateForm(form) {
             dateCorte: form.getValue("corteDate"),
             status: form.getValue("radioTypesCorte")
         }
-        
         // Validando checkbox:
         if ((activityCorte.afiamento != "on") || 
             (activityCorte.epi != "on") || 
@@ -70,7 +67,6 @@ function validateForm(form) {
             dateInspecao: form.getValue("serrariaDate"),
             status: form.getValue("radioTypesSerraria")
         }
-
         if((activitySerraria.recebimentoToras != "on") ||
             (activitySerraria.descascamento != "on") ||
             (activitySerraria.cortePrimario != "on") ||
@@ -93,7 +89,37 @@ function validateForm(form) {
     }
 
     // Processo de Secagem:
-    // if(activity == 4){}
+    if(activity == 8){
+        var activitySecagem = {
+            empilhamento: form.getValue("empilhamento"),
+            entradaForno: form.getValue("entradaForno"),
+            curvaSecagem: form.getValue("curvaSecagem"),
+            verifUmidade: form.getValue("verifUmidade"),
+            ausenciaRachaduras: form.getValue("ausenciaRachaduras"),
+            resfriamento: form.getValue("resfriamento"),
+            nameResp: form.getValue("nameRespSecagem"),
+            dateInspecao: form.getValue("secagemDate"),
+            status: form.getValue("radioTypesSecagem")
+        };
+        if((activitySecagem.empilhamento != "on") ||
+            (activitySecagem.entradaForno != "on") ||
+            (activitySecagem.curvaSecagem != "on") ||
+            (activitySecagem.verifUmidade != "on") ||
+            (activitySecagem.ausenciaRachaduras != "on") ||
+            (activitySecagem.resfriamento != "on")){
+                throw "Todos os itens do checklist da etapa de Secagem devem ser marcados.";
+        }
+        if(activitySecagem.nameResp == ""){
+            throw 'Por favor, preencha o campo "Nome do Responsável" antes de continuar.';
+        }
+        if(activitySecagem.dateInspecao == ""){
+            throw 'Por favor, preencha a "Data da Secagem" antes de continuar.';
+        }
+        if(activitySecagem.status == ""){
+            throw 'Por favor, preencha o "Status" antes de continuar.';
+        }
+
+    }
 
     // Processo de Aprovação:
     // if(activity == 4){}
