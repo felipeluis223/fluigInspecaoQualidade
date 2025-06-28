@@ -1,5 +1,6 @@
 # 🧪 Controle de Inspeção de Qualidade
 
+
 ## 📋 Descrição
 
 Este projeto consiste em um **formulário web de Controle de Inspeção de Qualidade**, desenvolvido utilizando **HTML**, **CSS** e **JavaScript**, com o **Fluig Style Guide** como base de padronização visual.
