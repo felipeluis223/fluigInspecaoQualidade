@@ -13,17 +13,18 @@
 			
 			    <div class="table-responsive">
 			        <table id="datatableProcessos" class="table table-striped">
-			            <thead>
-			                <tr>
-			                    <th>Número do Processo</th>
-			                    <th>Etapa atual</th>
-			                    <th>Data da Solicitação</th>
-			                </tr>
-			            </thead>
-			            <tbody>
-			                <!-- Dados serão inseridos via JavaScript -->
-			            </tbody>
-			        </table>
+					    <thead>
+					        <tr>
+					            <th>Número do Processo</th>
+					            <th>Etapa</th>
+					            <th>Data da Solicitação</th>
+					        </tr>
+					    </thead>
+					    <tbody>
+					        <!-- Linhas inseridas pelo JS -->
+					    </tbody>
+					</table>
+
 			    </div>
 			</div>    	
 	    </div>
