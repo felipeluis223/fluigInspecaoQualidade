@@ -13,7 +13,7 @@
 		            >
 		                <div class="card-thumb-actions">
 		                    <button type="button" class="btn btn-primary">
-		                        Visualizar página
+		                        Acessar
 		                    </button>
 		                </div>
 		                <i class="illustration illustration-flow-dark illustration-md" aria-hidden="true"></i>
@@ -43,7 +43,7 @@
 		            >
 		                <div class="card-thumb-actions">
 		                    <button type="button" class="btn btn-primary">
-		                        Visualizar página
+		                        Acessar
 		                    </button>
 		                </div>
 		                <i class="illustration illustration-community-dark illustration-md" aria-hidden="true"></i>
@@ -72,7 +72,7 @@
 		            >
 		                <div class="card-thumb-actions">
 		                    <button type="button" class="btn btn-primary">
-		                        Visualizar página
+		                        Acessar
 		                    </button>
 		                </div>
 		                <i class="illustration illustration-profits-dark illustration-md" aria-hidden="true"></i>
@@ -101,7 +101,7 @@
 		            >
 		                <div class="card-thumb-actions">
 		                    <button type="button" class="btn btn-primary">
-		                        Visualizar página
+		                        Acessar
 		                    </button>
 		                </div>
 		                <i class="illustration illustration-tasks-dark illustration-md" aria-hidden="true"></i>

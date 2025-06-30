@@ -1,4 +1,16 @@
 eclipse.preferences.version=1
+encoding//wcm/widget/news/src/main/resources/application.info=utf8
+encoding//wcm/widget/news/src/main/resources/edit.ftl=utf8
+encoding//wcm/widget/news/src/main/resources/news.properties=utf8
+encoding//wcm/widget/news/src/main/resources/news_en_US.properties=utf8
+encoding//wcm/widget/news/src/main/resources/news_es.properties=utf8
+encoding//wcm/widget/news/src/main/resources/news_pt_BR.properties=utf8
+encoding//wcm/widget/news/src/main/resources/view.ftl=utf8
+encoding//wcm/widget/news/src/main/webapp/WEB-INF/jboss-web.xml=utf8
+encoding//wcm/widget/news/src/main/webapp/WEB-INF/web.xml=utf8
+encoding//wcm/widget/news/src/main/webapp/resources/css/news.css=utf8
+encoding//wcm/widget/news/src/main/webapp/resources/images/icon.png=utf8
+encoding//wcm/widget/news/src/main/webapp/resources/js/news.js=utf8
 encoding//wcm/widget/painel/src/main/resources/application.info=utf8
 encoding//wcm/widget/painel/src/main/resources/edit.ftl=utf8
 encoding//wcm/widget/painel/src/main/resources/painel.properties=utf8
