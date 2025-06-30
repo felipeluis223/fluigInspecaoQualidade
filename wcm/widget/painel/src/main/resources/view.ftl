@@ -5,7 +5,7 @@
         </div>
         <div class="panel-body">
 		    
-		    <!-- Tasks -->
+		    <!-- Processos -->
 		    <div class="col-lg-3 col-md-4 col-sm-6">
 		        <div class="card">
 		            <div
@@ -16,12 +16,12 @@
 		                        Visualizar página
 		                    </button>
 		                </div>
-		                <i class="illustration illustration-tasks-dark illustration-md" aria-hidden="true"></i>
+		                <i class="illustration illustration-flow-dark illustration-md" aria-hidden="true"></i>
 		            </div>
 		            <div class="card-body">
 		                <div class="card-title-with-actions">
 		                    <h1 class="card-normal-title">
-		                        <strong>Processos</strong>
+		                    	<strong>Processos</strong>
 		                    </h1>
 		                </div>
 		                <p class="card-small-text">
@@ -35,6 +35,7 @@
 		        </div>
 		    </div>
    
+   			<!-- Colaboradores -->
         	<div class="col-lg-3 col-md-4 col-sm-6">
 		        <div class="card">
 		            <div
@@ -63,6 +64,64 @@
 		        </div>
 		    </div>
    
+   			<!-- Dashboard -->
+   			<div class="col-lg-3 col-md-4 col-sm-6">
+		        <div class="card">
+		            <div
+		                class="card-thumb card-thumb-illustration"
+		            >
+		                <div class="card-thumb-actions">
+		                    <button type="button" class="btn btn-primary">
+		                        Visualizar página
+		                    </button>
+		                </div>
+		                <i class="illustration illustration-profits-dark illustration-md" aria-hidden="true"></i>
+		            </div>
+		            <div class="card-body">
+		                <div class="card-title-with-actions">
+		                    <h1 class="card-normal-title">
+		                        <strong>Dashboard</strong>
+		                    </h1>
+		                </div>
+		                <p class="card-small-text">
+		                	Apresenta uma visão consolidada dos dados operacionais 
+		                	e de qualidade, com gráficos e indicadores em tempo 
+		                	real, facilitando o monitoramento dos processos, a 
+		                	análise de desempenho e a tomada de decisões.
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+   			
+   			<!-- Histórico -->
+   			<div class="col-lg-3 col-md-4 col-sm-6">
+		        <div class="card">
+		            <div
+		                class="card-thumb card-thumb-illustration"
+		            >
+		                <div class="card-thumb-actions">
+		                    <button type="button" class="btn btn-primary">
+		                        Visualizar página
+		                    </button>
+		                </div>
+		                <i class="illustration illustration-tasks-dark illustration-md" aria-hidden="true"></i>
+		            </div>
+		            <div class="card-body">
+		                <div class="card-title-with-actions">
+		                    <h1 class="card-normal-title">
+		                        <strong>Histórico</strong>
+		                    </h1>
+		                </div>
+		                <p class="card-small-text">
+							Permite o acesso ao registro completo das atividades 
+							realizadas nos processos, incluindo datas, responsáveis, 
+							decisões e alterações, garantindo rastreabilidade e 
+							transparência em cada etapa.
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+      
         </div>
     </div>
 </div>
