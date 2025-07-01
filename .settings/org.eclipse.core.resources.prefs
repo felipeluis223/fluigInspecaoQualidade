@@ -1,4 +1,16 @@
 eclipse.preferences.version=1
+encoding//wcm/widget/chart/src/main/resources/application.info=utf8
+encoding//wcm/widget/chart/src/main/resources/chart.properties=utf8
+encoding//wcm/widget/chart/src/main/resources/chart_en_US.properties=utf8
+encoding//wcm/widget/chart/src/main/resources/chart_es.properties=utf8
+encoding//wcm/widget/chart/src/main/resources/chart_pt_BR.properties=utf8
+encoding//wcm/widget/chart/src/main/resources/edit.ftl=utf8
+encoding//wcm/widget/chart/src/main/resources/view.ftl=utf8
+encoding//wcm/widget/chart/src/main/webapp/WEB-INF/jboss-web.xml=utf8
+encoding//wcm/widget/chart/src/main/webapp/WEB-INF/web.xml=utf8
+encoding//wcm/widget/chart/src/main/webapp/resources/css/chart.css=utf8
+encoding//wcm/widget/chart/src/main/webapp/resources/images/icon.png=utf8
+encoding//wcm/widget/chart/src/main/webapp/resources/js/chart.js=utf8
 encoding//wcm/widget/news/src/main/resources/application.info=utf8
 encoding//wcm/widget/news/src/main/resources/edit.ftl=utf8
 encoding//wcm/widget/news/src/main/resources/news.properties=utf8
