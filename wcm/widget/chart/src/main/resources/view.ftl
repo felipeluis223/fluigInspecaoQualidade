@@ -1,7 +1,17 @@
 <div id="Chart_${instanceId}" class="super-widget wcm-widget-class fluig-style-guide" data-params="Chart.instance()">
     
-    <!-- Container do gráfico -->
-    <div id="MY_SELECTOR"></div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2 class="panel-title">Gráfico com Dados Simulados</h2>
+        </div>
+        
+        <div class="panel-body">
+			<!-- Container do gráfico -->
+		    <div id="MY_SELECTOR"></div>
+        </div>
+     </div>
+     
+   
 
     <!-- Script do gráfico -->
     <script src="/style-guide/js/fluig-style-guide-chart.min.js"></script>
