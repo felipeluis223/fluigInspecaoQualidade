@@ -28,10 +28,10 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>controleProcesso</processId>
-      <version>11</version>
+      <version>3</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
-    <formId>13</formId>
+    <formId>66</formId>
     <editionMode>true</editionMode>
     <updateAttachmentsVersion>false</updateAttachmentsVersion>
     <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
@@ -537,7 +537,7 @@
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
         <expressionOrder>1</expressionOrder>
-        <version>11</version>
+        <version>3</version>
         <sequence>36</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;radioTypesCorte&quot;) == &quot;success&quot;</condition>
@@ -551,7 +551,7 @@
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
         <expressionOrder>2</expressionOrder>
-        <version>11</version>
+        <version>3</version>
         <sequence>36</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;radioTypesCorte&quot;) == &quot;danger&quot;</condition>
@@ -565,7 +565,7 @@
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
         <expressionOrder>1</expressionOrder>
-        <version>11</version>
+        <version>3</version>
         <sequence>42</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;radioTypesSerraria&quot;) == &quot;success&quot;</condition>
@@ -579,7 +579,7 @@
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
         <expressionOrder>2</expressionOrder>
-        <version>11</version>
+        <version>3</version>
         <sequence>42</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;radioTypesSerraria&quot;) == &quot;danger&quot;</condition>
@@ -593,7 +593,7 @@
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
         <expressionOrder>1</expressionOrder>
-        <version>11</version>
+        <version>3</version>
         <sequence>48</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;radioTypesSecagem&quot;) == &quot;success&quot;</condition>
@@ -607,7 +607,7 @@
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
         <expressionOrder>2</expressionOrder>
-        <version>11</version>
+        <version>3</version>
         <sequence>48</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;radioTypesSecagem&quot;) == &quot;danger&quot;</condition>
@@ -913,7 +913,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
-        <version>11</version>
+        <version>3</version>
         <linkSequence>34</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -924,7 +924,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
-        <version>11</version>
+        <version>3</version>
         <linkSequence>35</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -935,7 +935,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
-        <version>11</version>
+        <version>3</version>
         <linkSequence>50</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -946,7 +946,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
-        <version>11</version>
+        <version>3</version>
         <linkSequence>55</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -957,7 +957,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
-        <version>11</version>
+        <version>3</version>
         <linkSequence>55</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -968,7 +968,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>controleProcesso</processId>
-        <version>11</version>
+        <version>3</version>
         <linkSequence>57</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>

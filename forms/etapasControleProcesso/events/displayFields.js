@@ -2,11 +2,11 @@ function displayFields(form, customHTML) {
     var user = getValue("WKUser");
 
     var groups = [
-        "grpColaborador",
-        "grpCorte",
-        "grpSecagem",
-        "grpSerraria",
-        "grpSupervisor"
+        "grpColaborador", // MariaTeste
+        "grpCorte",       // FelipeTeste
+        "grpSecagem",     // JoaoTeste
+        "grpSerraria",    // CassandraTeste
+        "grpSupervisor"   // JanainaTeste
     ];
 
     var constraints = [
@@ -31,21 +31,6 @@ function displayFields(form, customHTML) {
         var year = now.getFullYear();
         var formatDate = day + '/' + month + '/' + year;
         return formatDate;
-    }
-
-    // Desabilita todos os campos por padrão:
-    var allFields = [
-        "idColab", "nameColab", "batchId", "batchDate",
-        "afiamento", "epi", "calibracao", "trincas", "nameRespCorte", "corteDate", "radioTypesCorte", "obsCorte",
-        "recebimentoToras", "descascamento", "cortePrimario", "corteSecundario", "inspecaoVisual", "secagem",
-        "armazenagem", "documentacao", "nameRespSerraria", "serrariaDate", "radioTypesSerraria", "obsSerraria",
-        "empilhamento", "entradaForno", "curvaSecagem", "verifUmidade", "ausenciaRachaduras", "resfriamento",
-        "nameRespSecagem", "secagemDate", "radioTypesSecagem", "obsSecagem",
-        "idSupervisor", "nameSupervisor", "supervisorDate", "radioTypesSupervisor", "obsSupervisor",
-        "visto"
-    ];
-    for (var i = 0; i < allFields.length; i++) {
-        form.setEnabled(allFields[i], false);
     }
 
     // Habilitando os campos necessários para a primeira etapa do solicitante:
