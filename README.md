@@ -21,6 +21,7 @@ Cada etapa possui campos específicos e controle de visibilidade/habilitação b
 
 ---
 
+
 ## 🔧 Tecnologias Utilizadas
 
 - **HTML5**  
