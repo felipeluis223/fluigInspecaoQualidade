@@ -12,7 +12,7 @@
 		                class="card-thumb card-thumb-illustration"
 		            >
 		                <div class="card-thumb-actions">
-		                    <button type="button" class="btn btn-primary">
+		                    <button type="button" class="btn btn-primary" data-navegar-processo>
 		                        Acessar
 		                    </button>
 		                </div>

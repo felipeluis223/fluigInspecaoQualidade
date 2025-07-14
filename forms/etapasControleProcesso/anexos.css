@@ -1,0 +1,39 @@
+/* Os Estilos abaixo sao para o fundo e bordas do formulario  */
+div.panel div.panel-heading {
+  background-color: #ed3237 !important;
+  color: #fff !important;
+  border: 1px solid #ed3237 !important;
+}
+ 
+div.panel {
+  border: none !important;
+}
+ 
+div.panel div.panel-body {
+  border: 1px solid #ed3237 !important;
+}
+ 
+/* .margin-espaco
+{
+  margin-top: 10px;
+} */
+ 
+/* Estilos para o hr */
+.separador_vermelho {
+  border-color: #ed3237 !important;
+}
+ 
+/* Estilos para o titulo de cada sessao do formulario */
+.titulo {
+  margin-left: 12px;
+  margin-top: 0px !important;
+  padding-bottom: 6px;
+}
+ 
+.btn.btn-primary {
+  margin-bottom: 20px !important;
+}
+ 
+#div_motivo {
+  margin-top: 20px;
+}

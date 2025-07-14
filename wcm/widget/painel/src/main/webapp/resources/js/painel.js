@@ -1,4 +1,4 @@
-var MyWidget = SuperWidget.extend({
+var PainelWidget = SuperWidget.extend({
     //variáveis da widget
     variavelNumerica: null,
     variavelCaracter: null,
@@ -10,13 +10,12 @@ var MyWidget = SuperWidget.extend({
     //BIND de eventos
     bindings: {
         local: {
-            'execute': ['click_executeAction']
+            'navegar-processo': ['click_navProcessos']
         },
         global: {}
     },
- 
-    executeAction: function(htmlElement, event) {
+    navProcessos: function(){
+        console.log("clickou");
     }
-
 });
 

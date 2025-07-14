@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_451" class="java.beans.XMLDecoder">
+ <object class="java.util.HashMap">
+  <void method="put">
+   <string>volume</string>
+   <array class="java.lang.String" length="1">
+    <void index="0">
+     <string>Default</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>mecanismoGrupo</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo que pode consultar SC </string>
+      </void>
+      <void property="groupId">
+       <string>Consultar_SC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo Administradores SC </string>
+      </void>
+      <void property="groupId">
+       <string>Administradores_SC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo erro Integração ERP (SC) </string>
+      </void>
+      <void property="groupId">
+       <string>Erro_Integracao_ERP_SC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo erro GED (SC) </string>
+      </void>
+      <void property="groupId">
+       <string>Erro_GED_SC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo que pode abrir SC </string>
+      </void>
+      <void property="groupId">
+       <string>Abertura_SC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo de Equalização (cotação) </string>
+      </void>
+      <void property="groupId">
+       <string>Equalizacao_Cotacao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo erro Gerar Cotação </string>
+      </void>
+      <void property="groupId">
+       <string>Erro_Gerar_Cotacao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo erro Gerar Pedido Compra </string>
+      </void>
+      <void property="groupId">
+       <string>Erro_Gerar_PC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo erro GED (cotação) </string>
+      </void>
+      <void property="groupId">
+       <string>Erro_GED_Cotacao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo que pode consultar Cotação </string>
+      </void>
+      <void property="groupId">
+       <string>Consultar_Cotacao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo que pode criar Cotação </string>
+      </void>
+      <void property="groupId">
+       <string>Abertura_Cotacao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo erro na Reprovação (PC) </string>
+      </void>
+      <void property="groupId">
+       <string>Erro_Reprovacao_PC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo erro na Aprovação (PC) </string>
+      </void>
+      <void property="groupId">
+       <string>Erro_Aprovacao_PC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo erro e-mail Pág. Pública (PC) </string>
+      </void>
+      <void property="groupId">
+       <string>Erro_Email_Pag_Publica_PC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo que pode consultar PC </string>
+      </void>
+      <void property="groupId">
+       <string>Consultar_PC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo que pode criar PC </string>
+      </void>
+      <void property="groupId">
+       <string>Abertura_PC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo que pode acessar os Relatórios </string>
+      </void>
+      <void property="groupId">
+       <string>Relatorios</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>usuarios_trc</string>
+      </void>
+      <void property="groupId">
+       <string>usuarios_trc</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Usuário com permissão de alterar os parâmetros gerais da aplicação do Compras Digital</string>
+      </void>
+      <void property="groupId">
+       <string>ADMINISTRADORES_COMPRAS_DIGITAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Syncros Fiscal</string>
+      </void>
+      <void property="groupId">
+       <string>Syncros_Fiscal</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Syncros Faturamento</string>
+      </void>
+      <void property="groupId">
+       <string>Syncros_Faturamento</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Syncros Compras</string>
+      </void>
+      <void property="groupId">
+       <string>Syncros_Compras</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Syncros Juridico</string>
+      </void>
+      <void property="groupId">
+       <string>Syncros_Juridico</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Syncros Consultas Fiscais</string>
+      </void>
+      <void property="groupId">
+       <string>Syncros_Consultas_Fiscais</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Syncros Admin</string>
+      </void>
+      <void property="groupId">
+       <string>Syncros_Admin</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>GED_LEGADO_PROCESSO_DE_PAGAMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>GED_LEGADO_PROCESSO_DE_PAGAMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo erro Integração Protheus (DV)</string>
+      </void>
+      <void property="groupId">
+       <string>Erro_Integracao_Protheus_DV</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>FIN_Despesas_Viagens</string>
+      </void>
+      <void property="groupId">
+       <string>FIN_Despesas_Viagens</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Solicitação de Viagem - Solicitar</string>
+      </void>
+      <void property="groupId">
+       <string>grpSolicitaoViagemSolicitar</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Solicitação de Viagem Cotação</string>
+      </void>
+      <void property="groupId">
+       <string>grpSolicitaoViagemCotacao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Solicitação de Viagem - Gestor</string>
+      </void>
+      <void property="groupId">
+       <string>grpSolicitaoViagemGestor</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Gestor de Faturamento</string>
+      </void>
+      <void property="groupId">
+       <string>gestorFaturamento</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Analisar Erro Pedido Faturamento</string>
+      </void>
+      <void property="groupId">
+       <string>analisaErro</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Compras</string>
+      </void>
+      <void property="groupId">
+       <string>MT_Compras</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Compras</string>
+      </void>
+      <void property="groupId">
+       <string>PA_Compras</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Exportacao Ged</string>
+      </void>
+      <void property="groupId">
+       <string>GED_Exportacao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>PA FISCAL</string>
+      </void>
+      <void property="groupId">
+       <string>PA_Fiscal</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>teste</string>
+      </void>
+      <void property="groupId">
+       <string>MT_Fiscal</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>grpColaboradores</string>
+      </void>
+      <void property="groupId">
+       <string>grpColaboradores</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>grpCentroCusto</string>
+      </void>
+      <void property="groupId">
+       <string>grpCentroCusto</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>grpFinanceiro</string>
+      </void>
+      <void property="groupId">
+       <string>grpFinanceiro</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>grpColaborador</string>
+      </void>
+      <void property="groupId">
+       <string>grpColaborador</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>grpCorte</string>
+      </void>
+      <void property="groupId">
+       <string>grpCorte</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>grpSecagem</string>
+      </void>
+      <void property="groupId">
+       <string>grpSecagem</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>grpSerraria</string>
+      </void>
+      <void property="groupId">
+       <string>grpSerraria</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>grpSupervisor</string>
+      </void>
+      <void property="groupId">
+       <string>grpSupervisor</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>expediente</string>
+   <array class="java.lang.String" length="1">
+    <void index="0">
+     <string>Default</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>mecanismo</string>
+   <array class="[Ljava.lang.Object;" length="28">
+    <void index="0">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Associação</string>
+      </void>
+      <void index="1">
+       <string>Associado</string>
+      </void>
+     </array>
+    </void>
+    <void index="1">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>atribPorOrigAnalise</string>
+      </void>
+      <void index="1">
+       <string>atribPorOrigAnalise</string>
+      </void>
+     </array>
+    </void>
+    <void index="2">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>atribPorOrigRet</string>
+      </void>
+      <void index="1">
+       <string>atribPorOrigRet</string>
+      </void>
+     </array>
+    </void>
+    <void index="3">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>atribuicaoPorFilial</string>
+      </void>
+      <void index="1">
+       <string>atribuicaoPorFilial</string>
+      </void>
+     </array>
+    </void>
+    <void index="4">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Campo de Formulário</string>
+      </void>
+      <void index="1">
+       <string>Campo Formulário</string>
+      </void>
+     </array>
+    </void>
+    <void index="5">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Executor de Atividade</string>
+      </void>
+      <void index="1">
+       <string>Executor Atividade</string>
+      </void>
+     </array>
+    </void>
+    <void index="6">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Grupo</string>
+      </void>
+      <void index="1">
+       <string>Grupo</string>
+      </void>
+     </array>
+    </void>
+    <void index="7">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Grupos do Colaborador</string>
+      </void>
+      <void index="1">
+       <string>Grupos Colaborador</string>
+      </void>
+     </array>
+    </void>
+    <void index="8">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Papel</string>
+      </void>
+      <void index="1">
+       <string>Papel</string>
+      </void>
+     </array>
+    </void>
+    <void index="9">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição para um Grupo</string>
+      </void>
+      <void index="1">
+       <string>Pool Grupo</string>
+      </void>
+     </array>
+    </void>
+    <void index="10">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição para um Papel</string>
+      </void>
+      <void index="1">
+       <string>Pool Papel</string>
+      </void>
+     </array>
+    </void>
+    <void index="11">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Usuário</string>
+      </void>
+      <void index="1">
+       <string>Usuário</string>
+      </void>
+     </array>
+    </void>
+    <void index="12">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_APROV_SC</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_APROV_SC</string>
+      </void>
+     </array>
+    </void>
+    <void index="13">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_CLASSIF_FISC_NF</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_CLASSIF_FISC_NF</string>
+      </void>
+     </array>
+    </void>
+    <void index="14">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_EQUALIZACAO_COT</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_EQUALIZACAO_COT</string>
+      </void>
+     </array>
+    </void>
+    <void index="15">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_ERRO_APROV_PC</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_ERRO_APROV_PC</string>
+      </void>
+     </array>
+    </void>
+    <void index="16">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_ERRO_GED_COT</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_ERRO_GED_COT</string>
+      </void>
+     </array>
+    </void>
+    <void index="17">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_ERRO_GED_SC</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_ERRO_GED_SC</string>
+      </void>
+     </array>
+    </void>
+    <void index="18">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_ERRO_INS_COT</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_ERRO_INS_COT</string>
+      </void>
+     </array>
+    </void>
+    <void index="19">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_ERRO_INS_PED_COT</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_ERRO_INS_PED_COT</string>
+      </void>
+     </array>
+    </void>
+    <void index="20">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_ERRO_INTEGR_SC</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_ERRO_INTEGR_SC</string>
+      </void>
+     </array>
+    </void>
+    <void index="21">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_ERRO_MAIL_COT</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_ERRO_MAIL_COT</string>
+      </void>
+     </array>
+    </void>
+    <void index="22">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_ERRO_MAIL_RECEB</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_ERRO_MAIL_RECEB</string>
+      </void>
+     </array>
+    </void>
+    <void index="23">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_ERRO_REPROV_PC</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_ERRO_REPROV_PC</string>
+      </void>
+     </array>
+    </void>
+    <void index="24">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_ERRO_UPD_COT</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_ERRO_UPD_COT</string>
+      </void>
+     </array>
+    </void>
+    <void index="25">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_INTEGRADOR</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_INTEGRADOR</string>
+      </void>
+     </array>
+    </void>
+    <void index="26">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_MAC</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_MAC</string>
+      </void>
+     </array>
+    </void>
+    <void index="27">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>XP_CDIG_RECEB_NF</string>
+      </void>
+      <void index="1">
+       <string>XP_CDIG_RECEB_NF</string>
+      </void>
+     </array>
+    </void>
+   </array>
+  </void>
+ </object>
+</java>
